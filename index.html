@@ -1,80 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Currículum Vitae</title>
+    <meta charset="UTF-8">
+    <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header>
-<h1>Currículum Vitae</h1>
-</header>
-<nav>
-<ul>
-<li><a href="#">Inicio</a></li>
-<li><a href="#">Educación</a></li>
-<li><a href="#">Experiencia</a></li>
-<li><a href="#">Habilidades</a></li>
-<li><a href="#">Contacto</a></li>
-</ul>
-</nav>
-<section id="informacion-personal">
-<h2>Información personal</h2>
-<p>
-Nombre: <span>Ronald Gaibor</span>
-</p>
-<p>
-Dirección: <span>Guayaquil, Ecuador</span>
-</p>
-<p>
-Teléfono: <span>+52 123 456 7890</span>
-</p>
-<p>
-Correo electrónico: <span>rgaibor@example.com</span>
-</p>
-</section>
-<section id="educacion">
-<h2>Educación</h2>
-<p>
-Grado: <span></span>
-</p>
-<p>
-Institución: <span></span>
-</p>
-<p>
-Fechas: <span>2022 - 2024</span>
-</p>
-</section>
-<section id="experiencia">
-<h2>Experiencia</p>
-<p>
-Cargo: <span>Desarrollador de software</span>
-</p>
-<p>
-Empresa: <span></span>
-</p>
-<p>
-Fechas: <span></span>
-</p>
-<p>
-Descripción:
-<ul>
-<li>Desarrollo de aplicaciones web</li>
-<li>Mantenimiento de sistemas</li>
-<li>Trabajo en equipo</li>
-</ul>
-</p>
-</section>
-<section id="habilidades">
-<h2>Habilidades</h2>
-<ul>
-<li>Lenguajes de programación: Python, JavaScript, Java</li>
-<li>Bases de datos: MySQL</li>
-<li>Herramientas de desarrollo: Visual Studio Code, Git</li>
-<li>Otros: Inglés</li>
-</ul>
-</section>
+<body style="font-family:courier;text-align:center;">
+    <header>
+        <h1>Currículum Vitae</h1>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="myUL">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Educación</a></li>
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section id="informacion-personal">
+        <h2>Información personal</h2>
+        <img id ="imagen" src="https://placehold.co/100x100" alt="placehold">
+        <p>
+            <span>Nombre: </span>Ronald Gaibor
+        </p>
+        <p>
+            <span>Dirección: </span>Guayaquil, Ecuador
+        </p>
+        <p>
+            <span>Teléfono: </span>+52 123 456 7890
+        </p>
+        <p>
+            <span>Correo electrónico: </span>rgaibor@example.com
+        </p>
+    </section>
+    <section id="educacion">
+        <h2>Educación</h2>
+        <p>
+            Grado: <span></span>
+        </p>
+        <p>
+            Institución: <span></span>
+        </p>
+        <p>
+            Fechas: <span>2022 - 2024</span>
+        </p>
+    </section>
+    <section id="experiencia">
+        <h2>Experiencia</p>
+            <p>
+                Cargo: <span>Desarrollador de software</span>
+            </p>
+            <p>
+                Empresa: <span></span>
+            </p>
+            <p>
+                Fechas: <span></span>
+            </p>
+            <p>
+                Descripción: Desarrollo de aplicaciones web
+            </p>
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="container">
+            <ul class="myUL">
+                <li>Lenguajes de programación: Python, JavaScript, Java</li>
+                <li>Bases de datos: MySQL</li>
+                <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
+                <li>Otros: Inglés</li>
+            </ul>
+        </div>
+    </section>
+    <section id="formulario">
+        <form>
+            <p>Contactar:</p>
+            <label for="fname">Nombre:</label>
+            <br>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <label for="lname">Correo:</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+            <input id="submit_button" type="submit" value="Enviar" />
+            </form>
+    </section>
+    <section id="maps">
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3212282.8639330324!2d19.4714533930461!3d20.76956202619092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716232941847!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 <footer>
-<p>Copyright © 2023 Ronald Gaibor</p>
+    <p>Copyright © 2024 Ronald Gaibor</p>
 </footer>
 </body>
+
 </html>
