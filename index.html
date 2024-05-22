@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    
+    <!--
+        https://www.happyhues.co/palettes/3
+        https://www.w3schools.com/cssref/css_selectors.php
+        https://stackoverflow.com/questions/24234561/how-do-i-get-rid-of-whitespace-between-sections-css-html
+        rem html acronym
+    -->
+
 </head>
 <body style="font-family:courier;text-align:center;">
-    <header>
-        <h1>Currículum Vitae</h1>
-    </header>
-    <nav>
-        <div class="container">
-            <ul class="myUL">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Educación</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-
-    </nav>
+    <section id="Inicio">
+        <header>
+            <h1>Currículum Vitae</h1>
+        </header>
+        <nav>
+            <div class="container">
+                <ul class="myUL">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Educación</a></li>
+                    <li><a href="#">Experiencia</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
     <section id="informacion-personal">
-        <h2>Información personal</h2>
+        <h2 class="titulo">Información personal</h2>
         <img id ="imagen" src="https://placehold.co/100x100" alt="placehold">
         <p>
             <span>Nombre: </span>Ronald Gaibor
@@ -39,34 +48,34 @@
         </p>
     </section>
     <section id="educacion">
-        <h2>Educación</h2>
+        <h2 class="titulo">Educación</h2>
         <p>
-            Grado: <span></span>
+            <span>Grado: Lorem ipsum dolor sit amet</span>
         </p>
         <p>
-            Institución: <span></span>
+            <span>Institución: ESPOL</span>
         </p>
         <p>
-            Fechas: <span>2022 - 2024</span>
+            <span>Fechas: </span>2021 - 2024
         </p>
     </section>
     <section id="experiencia">
-        <h2>Experiencia</p>
+        <h2 class="titulo">Experiencia</p>
             <p>
-                Cargo: <span>Desarrollador de software</span>
+                <span>Cargo: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
             </p>
             <p>
-                Empresa: <span></span>
+                <span>Empresa: Ut enim ad minim veniam</span>
             </p>
             <p>
-                Fechas: <span></span>
+                <span>Fechas: 2021 - 2024</span>
             </p>
             <p>
-                Descripción: Desarrollo de aplicaciones web
+                Descripción: <span></span>
             </p>
     </section>
     <section id="habilidades">
-        <h2>Habilidades</h2>
+        <h2 class="titulo">Habilidades</h2>
         <div class="container">
             <ul class="myUL">
                 <li>Lenguajes de programación: Python, JavaScript, Java</li>
@@ -77,8 +86,10 @@
         </div>
     </section>
     <section id="formulario">
+        <h2 class="titulo">Formulario</h2>
         <form>
-            <p>Contactar:</p>
+            <span>Contactar:</span>
+            <br>
             <label for="fname">Nombre:</label>
             <br>
             <input type="text" id="name" name="name">
@@ -93,6 +104,7 @@
             </form>
     </section>
     <section id="maps">
+        <h2 class="titulo">Google Maps</h2>
         <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3212282.8639330324!2d19.4714533930461!3d20.76956202619092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716232941847!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
