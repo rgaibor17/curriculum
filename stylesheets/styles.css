@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+section:nth-child(2n) {
+    background-color: #90b4ce;
+  }
+  
+  section:nth-child(2n+1) {
+    background-color: #fffffe;
+  }
+
+* {
+    font-family: Jura;
+    line-height: 25px;
+}
+
 .titulo {
     font-family:  Raleway;
 }
@@ -21,11 +34,6 @@ section {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
     rgba(0, 0, 0, 0.09) 0px -3px 5px; 
   }
-
-* {
-    font-family: Jura;
-    line-height: 25px;
-}
 
 body {
     background-color: white;
@@ -53,29 +61,4 @@ div.container {
 ul.myUL {
     display: inline-block;
     text-align: left;
-}
-
-
-#informacion-personal {
-    background-color: #90b4ce;
-}
-
-#educacion {
-    background-color: #fffffe;
-}
-
-#experiencia{
-    background-color: #90b4ce;
-}
-
-#habilidades{
-    background-color: #fffffe;
-}
-
-#formulario {
-    background-color: #90b4ce;
-}
-
-#maps {
-    background-color: #fffffe;
 }

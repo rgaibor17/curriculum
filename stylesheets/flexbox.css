@@ -1,0 +1,44 @@
+section {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+#Inicio {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+#informacion-personal {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+#educacion {
+    flex-basis: 32.77%;
+    flex-grow: 1;
+}
+
+#experiencia{
+    flex-basis: 32.77%;
+    flex-grow: 1;
+}
+
+#habilidades{
+    flex-basis: 32.77%;
+    flex-grow: 1;
+}
+
+#formulario {
+    flex-basis: 45%;
+    flex-grow: 1;
+}
+
+#maps {
+    flex-basis: 45%;
+    flex-grow: 1;
+}
