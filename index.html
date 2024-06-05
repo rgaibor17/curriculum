@@ -4,110 +4,110 @@
     <meta charset="UTF-8">
     <title>Currículum Vitae</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-
-    
-    <!--
-        https://www.happyhues.co/palettes/3
-        https://www.w3schools.com/cssref/css_selectors.php
-        https://stackoverflow.com/questions/24234561/how-do-i-get-rid-of-whitespace-between-sections-css-html
-        rem html acronym
-    -->
+    <link rel="stylesheet" href="stylesheets/flexbox.css">
 
 </head>
 <body style="font-family:courier;text-align:center;">
-    <section id="Inicio">
-        <header>
-            <h1>Currículum Vitae</h1>
-        </header>
-        <nav>
+    <main>
+        <section id="Inicio">
+            <header>
+                <h1>Currículum Vitae</h1>
+            </header>
+            <nav>
+                <div class="container">
+                    <ul class="myUL">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Educación</a></li>
+                        <li><a href="#">Experiencia</a></li>
+                        <li><a href="#">Habilidades</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section id="informacion-personal">
+            <h2 class="titulo">Información personal</h2>
+            <img id ="imagen" src="https://placehold.co/100x100" alt="placehold">
+            <p>
+                <span>Nombre: </span>Ronald Gaibor
+            </p>
+            <p>
+                <span>Dirección: </span>Guayaquil, Ecuador
+            </p>
+            <p>
+                <span>Teléfono: </span>+52 123 456 7890
+            </p>
+            <p>
+                <span>Correo electrónico: </span>rgaibor@example.com
+            </p>
+        </section>
+        <section id="educacion">
+            <h2 class="titulo">Educación</h2>
+            <p>
+                <span>Grado: </span>Lorem ipsum dolor sit amet
+            </p>
+            <p>
+                <span>Institución: </span>ESPOL
+            </p>
+            <p>
+                <span>Fechas: </span>2021 - 2024
+            </p>
+        </section>
+        <section id="experiencia">
+            <h2 class="titulo">Experiencia</h2>
+                <p>
+                    <span>Cargo: </span>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <p>
+                    <span>Empresa: </span>Ut enim ad minim veniam
+                </p>
+                <p>
+                    <span>Fechas: </span>2021 - 2024
+                </p>
+                <p>
+                    <span>Descripción: </span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+        </section>
+        <section id="habilidades">
+            <h2 class="titulo">Habilidades</h2>
             <div class="container">
                 <ul class="myUL">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Educación</a></li>
-                    <li><a href="#">Experiencia</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li>Lenguajes de programación: Python, JavaScript, Java</li>
+                    <li>Bases de datos: MySQL</li>
+                    <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
+                    <li>Otros: Inglés</li>
                 </ul>
             </div>
-        </nav>
-    </section>
-    <section id="informacion-personal">
-        <h2 class="titulo">Información personal</h2>
-        <img id ="imagen" src="https://placehold.co/100x100" alt="placehold">
-        <p>
-            <span>Nombre: </span>Ronald Gaibor
-        </p>
-        <p>
-            <span>Dirección: </span>Guayaquil, Ecuador
-        </p>
-        <p>
-            <span>Teléfono: </span>+52 123 456 7890
-        </p>
-        <p>
-            <span>Correo electrónico: </span>rgaibor@example.com
-        </p>
-    </section>
-    <section id="educacion">
-        <h2 class="titulo">Educación</h2>
-        <p>
-            <span>Grado: Lorem ipsum dolor sit amet</span>
-        </p>
-        <p>
-            <span>Institución: ESPOL</span>
-        </p>
-        <p>
-            <span>Fechas: </span>2021 - 2024
-        </p>
-    </section>
-    <section id="experiencia">
-        <h2 class="titulo">Experiencia</p>
-            <p>
-                <span>Cargo: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-            </p>
-            <p>
-                <span>Empresa: Ut enim ad minim veniam</span>
-            </p>
-            <p>
-                <span>Fechas: 2021 - 2024</span>
-            </p>
-            <p>
-                Descripción: <span></span>
-            </p>
-    </section>
-    <section id="habilidades">
-        <h2 class="titulo">Habilidades</h2>
-        <div class="container">
-            <ul class="myUL">
-                <li>Lenguajes de programación: Python, JavaScript, Java</li>
-                <li>Bases de datos: MySQL</li>
-                <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
-                <li>Otros: Inglés</li>
-            </ul>
-        </div>
-    </section>
-    <section id="formulario">
-        <h2 class="titulo">Formulario</h2>
-        <form>
-            <span>Contactar:</span>
+        </section>
+        <section id="formulario">
+            <h2 class="titulo">Formulario</h2>
+            <form>
+                <span>Contactar:</span>
+                <br>
+                <label for="fname">Nombre:</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+                <br>
+                <label for="lname">Correo:</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <input id="submit_button" type="submit" value="Enviar" />
+                </form>
+        </section>
+        <section id="video">
+            <h2 class="titulo">Arch Linux: A ℂ𝕠𝕞𝕗𝕪 Install Guide</h2>
             <br>
-            <label for="fname">Nombre:</label>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/68z11VAYMS8?si=htmjQS8QTERqWSWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="maps">
+            <h2 class="titulo">Google Maps</h2>
             <br>
-            <input type="text" id="name" name="name">
-            <br>
-            <br>
-            <label for="lname">Correo:</label>
-            <br>
-            <input type="email" name="email" id="email">
-            <br>
-            <br>
-            <input id="submit_button" type="submit" value="Enviar" />
-            </form>
-    </section>
-    <section id="maps">
-        <h2 class="titulo">Google Maps</h2>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3212282.8639330324!2d19.4714533930461!3d20.76956202619092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716232941847!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3212282.8639330324!2d19.4714533930461!3d20.76956202619092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716232941847!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
 <footer>
     <p>Copyright © 2024 Ronald Gaibor</p>
 </footer>

@@ -1,4 +1,4 @@
-section {
+main {
     display: flex;
     flex-direction: row;
     row-gap: 0.5rem;
@@ -34,11 +34,16 @@ section {
 }
 
 #formulario {
-    flex-basis: 45%;
+    flex-basis: 5%;
+    flex-grow: 1;
+}
+
+#video {
+    flex-basis: 5%;
     flex-grow: 1;
 }
 
 #maps {
-    flex-basis: 45%;
+    flex-basis: 5%;
     flex-grow: 1;
 }

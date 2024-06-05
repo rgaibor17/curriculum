@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 section:nth-child(2n) {
-    background-color: #90b4ce;
-  }
-  
-  section:nth-child(2n+1) {
     background-color: #fffffe;
-  }
+}
+
+section:nth-child(2n+1) {
+    background-color: #90b4ce;
+}
 
 * {
     font-family: Jura;
