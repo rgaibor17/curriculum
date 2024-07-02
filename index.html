@@ -7,54 +7,56 @@
     <link rel="stylesheet" href="stylesheets/flexbox.css">
 
 </head>
-<body style="font-family:courier;text-align:center;">
-    <main>
+<body style="text-align:center">
+    <main id="body-main">
         <section id="Inicio">
             <header>
-                <h1>Currículum Vitae</h1>
+                <h1 class="titulo">CURRÍCULUM VITAE</h1>
             </header>
             <nav>
                 <div class="container">
-                    <ul class="myUL">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Educación</a></li>
-                        <li><a href="#">Experiencia</a></li>
-                        <li><a href="#">Habilidades</a></li>
-                        <li><a href="#">Contacto</a></li>
+                    <ul class="myULInicio">
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#informacion-personal_educacion">Educación</a></li>
+                        <li><a href="#experiencia_habilidades">Experiencia</a></li>
+                        <li><a href="#experiencia_habilidades">Habilidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
         </section>
-        <section id="informacion-personal">
-            <h2 class="titulo">Información personal</h2>
-            <img id ="imagen" src="https://placehold.co/100x100" alt="placehold">
-            <p>
-                <span>Nombre: </span>Ronald Gaibor
-            </p>
-            <p>
-                <span>Dirección: </span>Guayaquil, Ecuador
-            </p>
-            <p>
-                <span>Teléfono: </span>+52 123 456 7890
-            </p>
-            <p>
-                <span>Correo electrónico: </span>rgaibor@example.com
-            </p>
+        <section id="informacion-personal_educacion">
+            <h2 class="titulo">INFOMRACIÓN PERSONAL</h2>
+                <img id ="imagen" src="assets\80e8406626428e1d6387061f9783abd1.jpg" alt="default pfp-profile_picture">
+                <p>
+                    <span>Nombre: </span>Ronald Gaibor
+                </p>
+                <p>
+                    <span>Dirección: </span>Guayaquil, Ecuador
+                </p>
+                <p>
+                    <span>Teléfono: </span>+52 123 456 7890
+                </p>
+                <p>
+                    <span>Correo electrónico: </span>rgaibor@example.com
+                </p>
+            <h2 class="titulo">EDUCACIÓN</h2>
+                <p>
+                    <span>Grado: </span>Lorem ipsum dolor sit amet
+                </p>
+                <p>
+                    <span>Institución: </span>Escuela Superior Politécnica del Litoral
+                </p>
+                <p>
+                    <span>Fechas: </span>2021 - 2024
+                </p>
         </section>
-        <section id="educacion">
-            <h2 class="titulo">Educación</h2>
-            <p>
-                <span>Grado: </span>Lorem ipsum dolor sit amet
-            </p>
-            <p>
-                <span>Institución: </span>ESPOL
-            </p>
-            <p>
-                <span>Fechas: </span>2021 - 2024
-            </p>
+        <section id="maps">
+            <h2 class="titulo">UBICACIÓN ESPOL</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31896.096042208206!2d-79.95677896413486!3d-2.149090692156491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1719894290798!5m2!1sen!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section id="experiencia">
-            <h2 class="titulo">Experiencia</h2>
+        <section id="experiencia_habilidades">
+            <h2 class="titulo">EXPERIENCIA</h2>
                 <p>
                     <span>Cargo: </span>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
@@ -64,48 +66,52 @@
                 <p>
                     <span>Fechas: </span>2021 - 2024
                 </p>
-                <p>
-                    <span>Descripción: </span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p style="text-align: justify">
+                    <span>Descripción: </span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+                <br>
+            <h2 class="titulo">HABILIDADES</h2>
+                <div class="container">
+                    <ul class="myUL">
+                        <li>Lenguajes de programación: Python, JavaScript, Java</li>
+                        <li>Bases de datos: MySQL</li>
+                        <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
+                        <li>Otros: Inglés</li>
+                    </ul>
+                </div>
         </section>
-        <section id="habilidades">
-            <h2 class="titulo">Habilidades</h2>
-            <div class="container">
-                <ul class="myUL">
-                    <li>Lenguajes de programación: Python, JavaScript, Java</li>
-                    <li>Bases de datos: MySQL</li>
-                    <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
-                    <li>Otros: Inglés</li>
-                </ul>
-            </div>
-        </section>
-        <section id="formulario">
-            <h2 class="titulo">Formulario</h2>
+        <section id="contacto">
+            <h2 class="titulo">CONTACTO</h2>
             <form>
                 <span>Contactar:</span>
-                <br>
+                    <br>
+                    <br>
                 <label for="fname">Nombre:</label>
-                <br>
-                <input type="text" id="name" name="name">
-                <br>
-                <br>
+                    <br>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <br>
                 <label for="lname">Correo:</label>
-                <br>
-                <input type="email" name="email" id="email">
-                <br>
-                <br>
+                    <br>
+                    <input type="email" name="email" id="email">
+                    <br>
+                    <br>
+                <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
+                    <br>
+                    <br>
                 <input id="submit_button" type="submit" value="Enviar" />
-                </form>
+            </form>
         </section>
         <section id="video">
             <h2 class="titulo">Arch Linux: A ℂ𝕠𝕞𝕗𝕪 Install Guide</h2>
             <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/68z11VAYMS8?si=htmjQS8QTERqWSWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <section id="maps">
-            <h2 class="titulo">Google Maps</h2>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3212282.8639330324!2d19.4714533930461!3d20.76956202619092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716232941847!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <main id="video-main">
+                <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/68z11VAYMS8?si=htmjQS8QTERqWSWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/68z11VAYMS8?si=htmjQS8QTERqWSWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/68z11VAYMS8?si=htmjQS8QTERqWSWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </main>
         </section>
     </main>
 <footer>

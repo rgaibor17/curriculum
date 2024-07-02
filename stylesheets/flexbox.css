@@ -1,4 +1,4 @@
-main {
+#body-main, #video-main {
     display: flex;
     flex-direction: row;
     row-gap: 0.5rem;
@@ -13,37 +13,32 @@ main {
     flex-grow: 1;
 }
 
-#informacion-personal {
-    flex-basis: 100%;
-    flex-grow: 1;
-}
-
-#educacion {
-    flex-basis: 32.77%;
-    flex-grow: 1;
-}
-
-#experiencia{
-    flex-basis: 32.77%;
-    flex-grow: 1;
-}
-
-#habilidades{
-    flex-basis: 32.77%;
-    flex-grow: 1;
-}
-
-#formulario {
-    flex-basis: 5%;
-    flex-grow: 1;
-}
-
-#video {
-    flex-basis: 5%;
+#informacion-personal_educacion {
+    flex-basis: 49.5%;
     flex-grow: 1;
 }
 
 #maps {
-    flex-basis: 5%;
+    flex-basis: 49.5%;
+    flex-grow: 1;
+}
+
+#experiencia_habilidades {
+    flex-basis: 49.5%;
+    flex-grow: 1;
+}
+
+#contacto {
+    flex-basis: 49.5%;
+    flex-grow: 1;
+}
+
+#video {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.iframe {
+    flex-basis: 32.77%;
     flex-grow: 1;
 }

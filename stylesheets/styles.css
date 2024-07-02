@@ -1,32 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-section:nth-child(2n) {
+/*section:nth-child(2n) {
     background-color: #fffffe;
 }
 
 section:nth-child(2n+1) {
     background-color: #90b4ce;
-}
+}*/
 
 * {
-    font-family: Jura;
+    font-family: Raleway;
     line-height: 25px;
-}
-
-.titulo {
-    font-family:  Raleway;
-}
-
-section>div {
-    border:1px solid transparent
+    border-radius: 7px;
 }
 
 section {
     box-sizing: border-box;
     margin: 2px 1px 1.5px;
-    margin-top: 0.8rem;
-    border: 0.2pt double #094067;
-    padding: 2% 1.2%;
+    margin-top: 0rem;
+    padding: 0.5% 0.5%;
     box-shadow: 
     rgba(0, 0, 0, 0.25) 0px 54px 55px, 
     rgba(0, 0, 0, 0.12) 0px -12px 30px, 
@@ -35,19 +27,23 @@ section {
     rgba(0, 0, 0, 0.09) 0px -3px 5px; 
   }
 
-body {
-    background-color: white;
-}
+html { 
+    background: url('../assets/145-1453446_if-you-want-the-wallpapers-that-i-used.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
-h1 {
-    color: black;
+h1, h2 {
+    color: rgb(195, 255, 235);
     text-align: center;
     font-family: Raleway;
 }
 
-p {
+p, form {
     font-size: 20px;
-    color: #5f6c7b;
+    color: aliceblue;
 }
 
 span {
@@ -59,6 +55,58 @@ div.container {
 }
 
 ul.myUL {
+    font-size: 20px;
     display: inline-block;
     text-align: left;
+    color: #ffffff;
+}
+
+#imagen {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#submit_button {
+    padding: 10px 32px;
+    background-color: rgb(54, 100, 54);
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+}
+
+/* Barra de navegación */
+
+ul.myULInicio {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    width:  fit-content;
+}
+  
+ul.myULInicio li {
+    float: left;
+    border-right: 1px solid black;
+    border-radius: 0%;
+}
+
+ul.myULInicio li:last-child {
+    border-right: none;
+}
+  
+ul.myULInicio li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.myULInicio li a:hover {
+    background-color: #111;
 }
