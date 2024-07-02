@@ -83,6 +83,10 @@ ul.myUL li {
     border: none;
 }
 
+#submit_button:hover {
+    background-color: rgb(29, 53, 29);
+}
+
 /* Barra de navegación */
 
 ul.myULInicio {
