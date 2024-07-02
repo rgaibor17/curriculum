@@ -12,6 +12,7 @@ section:nth-child(2n+1) {
     font-family: Raleway;
     line-height: 25px;
     border-radius: 7px;
+    color: aliceblue;
 }
 
 section {
@@ -39,15 +40,16 @@ h1, h2 {
     color: rgb(195, 255, 235);
     text-align: center;
     font-family: Raleway;
+    text-decoration: underline double 2px;
 }
 
 p, form {
     font-size: 20px;
-    color: aliceblue;
 }
 
 span {
     font-weight: bold;
+    color: rgb(195, 255, 235);
 }
 
 div.container {
@@ -58,7 +60,14 @@ ul.myUL {
     font-size: 20px;
     display: inline-block;
     text-align: left;
-    color: #ffffff;
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+}
+
+ul.myUL li {
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
 #imagen {
@@ -70,7 +79,6 @@ ul.myUL {
 #submit_button {
     padding: 10px 32px;
     background-color: rgb(54, 100, 54);
-    color: aliceblue;
     font-weight: bold;
     border: none;
 }
@@ -86,7 +94,7 @@ ul.myULInicio {
     position: sticky;
     top: 0;
     display: inline-block;
-    width:  fit-content;
+    width: fit-content;
 }
   
 ul.myULInicio li {
@@ -101,7 +109,6 @@ ul.myULInicio li:last-child {
   
 ul.myULInicio li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
